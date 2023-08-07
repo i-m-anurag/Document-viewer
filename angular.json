@@ -23,14 +23,29 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/assets/include/pdf/pdf.viewer.css",
+              "src/assets/include/officeToHtml/officeToHtml.css",
+              "src/assets/include/SheetJS/handsontable.full.min.css",
+              "src/assets/include/PPTXjs/css/pptxjs.css",
+              "src/assets/include/PPTXjs/css/nv.d3.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/include/pdf/pdf.js",
+              "src/assets/include/docx/jszip-utils.js",
+              "src/assets/include/docx/mammoth.browser.min.js",
+              "src/assets/include/SheetJS/handsontable.full.min.js",
+              "src/assets/include/SheetJS/xlsx.full.min.js",
+              "src/assets/include/PPTXjs/js/filereader.js",
+              "src/assets/include/PPTXjs/js/d3.min.js",
+              "src/assets/include/PPTXjs/js/nv.d3.min.js",
+              "src/assets/include/PPTXjs/js/pptxjs.js",
+              "src/assets/include/PPTXjs/js/divs2slides.js",
+              "src/assets/include/officeToHtml/officeToHtml.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -91,13 +106,8 @@
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         }
